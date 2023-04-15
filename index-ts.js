@@ -1,18 +1,15 @@
-const {twoSumSolutionOne, twoSumSolutionTwo} = require('./solution-in-ts/dist/01-Two-sum'); /** 01-Palindrome-Number */
-const {isPalindrome} = require('./solution-in-ts/dist/09-Palindrome-Number'); /** 09-Palindrome-Number */
-const {romanToIntSolutionOne , romanToIntSolutionTwo} = require("./solution-in-ts/dist/13-Roman-to-Integer"); /** 13-Roman-to-Integer */
-
-console.log(twoSumSolutionOne([3,3], 6));
-console.log(twoSumSolutionTwo([3,3], 6));
-console.log(isPalindrome(-123));
-console.log(romanToIntSolutionOne("MMXXII"));
-console.log(romanToIntSolutionTwo("MMXXII"));
+const { twoSumSolutionOne, twoSumSolutionTwo } = require('./solution-in-ts/dist/01-Two-sum'); /** 01-Palindrome-Number */
+const { isPalindrome } = require('./solution-in-ts/dist/09-Palindrome-Number'); /** 09-Palindrome-Number */
+const { romanToIntSolutionOne, romanToIntSolutionTwo } = require("./solution-in-ts/dist/13-Roman-to-Integer"); /** 13-Roman-to-Integer */
+const { longestCommonPrefixSolutionOne, longestCommonPrefixSolutionTwo } = require("./solution-in-ts/dist/14-Longest-common-prefix"); /** 14-Longest-common-prefix */
 
 /** 13-Roman-to-Integer */
 console.time('performance');
-for(let i=0; i<1000 ; i++){
-  // twoSum([3,3], 6) /** Solution of problem 01-Palindrome-Number */
+for (let i = 0; i < 1000; i++) {
+  // twoSumSolutionOne([3,3], 6) /** Solution of problem 01-Palindrome-Number */
   // isPalindrome(-123) /** Solution of problem 09-Palindrome-Number */
-  //romanToInt("MMXXII"); /** Solution of problem 13-Roman-to-Integer */
+  // romanToIntSolutionTwo("MMXXII"); /** Solution of problem 13-Roman-to-Integer */
+  longestCommonPrefixSolutionTwo(["flower", "flower", "flower", "flower"]); /** Solution of problem 14-Longest-common-prefix */
+
 }
 console.timeEnd('performance');
