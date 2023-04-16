@@ -4,12 +4,16 @@
   "description": "",
   "main": "01-Two-sum.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test" : "jest"
   },
   "keywords": [],
   "author": "Mani Saffarnia <mani.saffarnia@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
