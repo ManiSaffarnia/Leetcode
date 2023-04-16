@@ -1,5 +1,5 @@
 /** Solution one */
-var twoSum = function (nums, target) {
+const twoSumSolutionOne = function (nums, target) {
   const length = nums.length;
   for (i = 0; i < length; i++) {
     for (j = i + 1; j < length; j++) {
@@ -11,10 +11,11 @@ var twoSum = function (nums, target) {
 };
 
 /** Solution Two */
-// const twoSum = (nums, target)=> {
+// const twoSumSolutionTwo = (nums, target)=> {
 //   for (let i = 0; i < nums.length; i++) {
 //     const diff = target - nums[i];
 //     const isSecondItemFound = nums.slice(i, 1).includes(diff);
+//     console.log('isSecondItemFound = ', isSecondItemFound);
 //     if(isSecondItemFound){
 //       const resultArray = [i];
 //       nums.forEach((item, index) => {
@@ -23,9 +24,13 @@ var twoSum = function (nums, target) {
 //           return;
 //         }
 //       });
+//       console.log('resultArray = ', resultArray)
 //       return resultArray
 //     }
 //   }
 // }
 
-module.exports = twoSum
+module.exports = {
+  twoSumSolutionOne,
+  // twoSumSolutionTwo
+}
